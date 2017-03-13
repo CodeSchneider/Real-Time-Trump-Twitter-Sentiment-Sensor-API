@@ -7,7 +7,7 @@ module.exports = {
 
   hookTimeout: 120000,
 
-  port: process.env.PORT,
+  port: process.env.PORT || 80,
 
   session: {
     secret: process.env.SESSION_SECRET,
