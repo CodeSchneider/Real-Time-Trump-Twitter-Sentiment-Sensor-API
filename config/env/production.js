@@ -5,9 +5,7 @@ module.exports = {
     migrate: 'safe'
   },
 
-  hookTimeout: 120000,
-
-  port: process.env.PORT || 80,
+  port: 80,
 
   session: {
     secret: process.env.SESSION_SECRET,
