@@ -5,7 +5,7 @@ module.exports = {
     migrate: 'safe'
   },
 
-  hookTimeout: 120000
+  hookTimeout: 120000,
 
   port: 80,
 
