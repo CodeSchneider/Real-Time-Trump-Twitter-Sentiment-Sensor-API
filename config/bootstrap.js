@@ -14,7 +14,7 @@ module.exports.bootstrap = function(cb) {
 
   stream.on('data', function(event) {
     var r = sentiment(event.text);
-    var picture_url = event.user.profile_image_url;
+    var picture_url = event.user.profile_image_url_https;
     var text = event.text;
     TweetService.saveTweet(r, picture_url, text, function(err,tweet){
       if (err) {
