@@ -1,5 +1,5 @@
 {
-  "name": "Real Time Trump Twitter Sentiment Sensor",
+  "name": "Real-Time-Trump-Twitter-Sentiment-Sensor",
   "private": true,
   "version": "0.0.1",
   "description": "React.js, D3, Sails.js, Socket.io - Trump Twitter Sentiment Real-Time Analytics",
