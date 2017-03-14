@@ -1,5 +1,3 @@
-var Twitter = require('twitter');
-var sentiment = require('sentiment');
 var moment = require('moment');
 
 module.exports = {
@@ -9,7 +7,7 @@ module.exports = {
     var lowerLimit = moment(upperLimit).subtract({'hour': 1}).format();
     Tweet.find().where( { createdAt: { '>': lowerLimit } } ).exec(function(err,tweets){
       if (err) {
-        sails.log.error(err);
+        return sails.log.error(err);
       }
       TweetService.tickMassage(tweets, upperLimit, function(err,tweets){
         if (err) {
